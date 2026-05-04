@@ -1,118 +1,127 @@
-body 
-{
-    background-color: rgb(119,119,119);
-    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+body {
+  background-color: rgb(119, 119, 119);
+  font-family:
+    BlinkMacSystemFont,
+    -apple-system,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    "Helvetica",
+    "Arial",
+    sans-serif;
 }
-h2
-{
-    margin: 10px 10px 0px 0px;
-    padding:0px 0px 0px 0px;
+
+h2 {
+  margin: 10px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
-h2.free
-{
-    display: table;
-    margin: 10px 10px 0px 10px;
-    padding:0px 5px 0px 5px;
-    color:rgb(60,60,60);
-    background-color:rgb(185,185,185);
+
+h2.free {
+  display: table;
+  margin: 10px 10px 0px 10px;
+  padding: 0px 5px 0px 5px;
+  color: rgb(60, 60, 60);
+  background-color: rgb(185, 185, 185);
 }
-section
-{
-    display: table;
-    max-width: 960px;
-    margin: 10px 10px 0px 10px;
-    padding:0px 15px 0px 15px;
-    color:rgb(60,60,60);
-    background-color:rgb(185,185,185);
+
+section {
+  display: table;
+  max-width: 960px;
+  margin: 10px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
+  color: rgb(60, 60, 60);
+  background-color: rgb(185, 185, 185);
 }
-a:link 
-{
-    color: #1b52aa;
+
+a:link {
+  color: #1b52aa;
 }
-a:visited 
-{
-    color: #1b52aa;
+
+a:visited {
+  color: #1b52aa;
 }
-a:active 
-{
-    color: #1b52aa;
-} 
-canvas
-{
-    image-rendering: crisp-edges;
+
+a:active {
+  color: #1b52aa;
 }
-div.colorpicker
-{
-    position: relative; 
-    height: 300px; 
-    width: 320px
+
+canvas {
+  image-rendering: crisp-edges;
 }
-svg.colorpicker
-{
-    position: absolute; 
-    left: 0; 
-    pointer-events: none;
+
+div.colorpicker {
+  position: relative;
+  height: 300px;
+  width: 320px;
 }
-canvas.colorpicker_square
-{
-    position: absolute;
-    left: 10px;
-    top: 10px;
+
+svg.colorpicker {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
 }
-canvas.colorpicker_slider
-{
-    position: absolute;
-    left: 287px;
-    top: 10px;
+
+canvas.colorpicker_square {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
-td
-{
-    padding: 0px 15px 0px 0px;
+
+canvas.colorpicker_slider {
+  position: absolute;
+  left: 287px;
+  top: 10px;
 }
-div.swatch
-{
-    width: 64px;
-    height: 64px;
-    display: inline-block;
+
+td {
+  padding: 0px 15px 0px 0px;
 }
-label
-{
-    text-align: center;
-    display:inline-block;
-    width:12px;
+
+div.swatch {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
 }
-input
-{
-    border: 1px solid rgba(0,0,0,0.333);
-    border-radius: 4px;
-    text-align: right; 
-    font-family: monospace;
-    color:rgb(30,30,30);
-    background-color: rgba(255,255,255,0.5);
+
+label {
+  text-align: center;
+  display: inline-block;
+  width: 12px;
 }
-.hex_input
-{
-    width: 65px;
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.333);
+  border-radius: 4px;
+  text-align: right;
+  font-family: monospace;
+  color: rgb(30, 30, 30);
+  background-color: rgba(255, 255, 255, 0.5);
 }
-.value_input
-{
-    width: 56px; 
+
+.hex_input {
+  width: 65px;
+}
+
+.value_input {
+  width: 56px;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-.flex-item
-{
-    padding: 0px 10px 0px 0px;
+.flex-item {
+  padding: 0px 10px 0px 0px;
 }
 
-@media (max-width: 800px) 
-{
-    .flex-container 
-    {
-        flex-direction: column;
-    }
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
