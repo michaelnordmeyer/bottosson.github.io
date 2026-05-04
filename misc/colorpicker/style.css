@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(119, 119, 119);
+  max-width: 1056px;
+  margin: 2rem auto;
+  line-height: 1.5;
   font-family:
     BlinkMacSystemFont,
     -apple-system,
@@ -14,40 +16,71 @@ body {
     "Helvetica",
     "Arial",
     sans-serif;
+  background-color: rgb(119, 119, 119);
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
-h2 {
-  margin: 10px 10px 0px 0px;
-  padding: 0px 0px 0px 0px;
+a {
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
-h2.free {
-  display: table;
-  margin: 10px 10px 0px 10px;
-  padding: 0px 5px 0px 5px;
-  color: rgb(60, 60, 60);
-  background-color: rgb(185, 185, 185);
+table {
+  margin: 1em;
 }
 
-section {
-  display: table;
-  max-width: 960px;
-  margin: 10px 10px 0px 10px;
-  padding: 0px 15px 0px 15px;
-  color: rgb(60, 60, 60);
-  background-color: rgb(185, 185, 185);
+th {
+  vertical-align: top;
 }
 
-a:link {
-  color: #1b52aa;
+th:first-of-type {
+  padding-right: 1em;
+  vertical-align: middle;
 }
 
-a:visited {
-  color: #1b52aa;
+td {
+  padding-right: 1em;
 }
 
-a:active {
-  color: #1b52aa;
+input {
+  text-align: right;
+  font-family: monospace;
+}
+
+.swatch {
+  width: 64px;
+  height: 64px;
+  display: block;
+}
+
+.hex-input {
+  display: block;
+  width: 64px;
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1em;
+  width: 1em;
+}
+
+.value-input {
+  width: 56px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  margin-right: 32px;
+}
+
+.flex-item h2 {
+  margin: 0 0 0 10px;
 }
 
 canvas {
@@ -66,58 +99,16 @@ svg.colorpicker {
   pointer-events: none;
 }
 
-canvas.colorpicker_square {
+canvas.colorpicker-square {
   position: absolute;
   left: 10px;
   top: 10px;
 }
 
-canvas.colorpicker_slider {
+canvas.colorpicker-slider {
   position: absolute;
   left: 287px;
   top: 10px;
-}
-
-td {
-  padding: 0px 15px 0px 0px;
-}
-
-div.swatch {
-  width: 64px;
-  height: 64px;
-  display: inline-block;
-}
-
-label {
-  text-align: center;
-  display: inline-block;
-  width: 12px;
-}
-
-input {
-  border: 1px solid rgba(0, 0, 0, 0.333);
-  border-radius: 4px;
-  text-align: right;
-  font-family: monospace;
-  color: rgb(30, 30, 30);
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.hex_input {
-  width: 65px;
-}
-
-.value_input {
-  width: 56px;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-item {
-  padding: 0px 10px 0px 0px;
 }
 
 @media (max-width: 800px) {
